@@ -1,19 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import BottomImage from "../Images/cta-logo-two.png";
+import TopImage from "../Images/cta-logo-one.svg";
+import BackgroundImage from "../Images/login-background.jpg";
 
 const login = () => {
   return (
     <Container>
       <Content>
         <CTA>
-          <CTALogoOne src="/Images/cta-logo-one.svg" alt="diney image" />
+          <CTALogoOne src={TopImage} alt="diney image" />
           <SignIn>get all there</SignIn>
           <Description>
             Get Premier Access to Raya and the Last Dragon for an additional fee
             with a Disney+ subscription. As of 03/26/21, the price of Disney+
             and The Disney Bundle will increase by $1.
           </Description>
-          <CTALogoOne src="/Images/cta-logo-two.png" alt="diney logo" />
+          <CTALogoOne src={BottomImage} alt="diney logo" />
         </CTA>
         <BgImage />
       </Content>
@@ -48,7 +51,7 @@ const BgImage = styled.div`
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  background-image: url("/Images/login-background.jpg");
+  background-image: url(${BackgroundImage});
   position: absolute;
   top: 0;
   right: 0;

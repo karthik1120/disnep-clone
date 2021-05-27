@@ -2,6 +2,10 @@ import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import FirstSlider from "../Images/slider-badging.jpg";
+import Slider1 from "../Images/slider-scale.jpg";
+import Slider2 from "../Images/slider-badag.jpg";
+import Slider3 from "../Images/slider-scales.jpg";
 
 const ImgSlider = (props) => {
   let settings = {
@@ -16,25 +20,25 @@ const ImgSlider = (props) => {
     <Carousel {...settings}>
       <Wrap>
         <a>
-          <img src="/Images/login-background.jpg" alt="" />
+          <img src={FirstSlider} alt="" />
         </a>
       </Wrap>
 
       <Wrap>
         <a>
-          <img src="/Images/login-background.jpg" alt="" />
+          <img src={Slider1} alt="" />
         </a>
       </Wrap>
 
       <Wrap>
         <a>
-          <img src="/Images/login-background.jpg" alt="" />
+          <img src={Slider2} alt="" />
         </a>
       </Wrap>
 
       <Wrap>
         <a>
-          <img src="/Images/login-background.jpg" alt="" />
+          <img src={Slider3} alt="" />
         </a>
       </Wrap>
     </Carousel>
@@ -55,6 +59,10 @@ const Carousel = styled(Slider)`
       transition: opacity 0.2s ease 0s;
     }
   }
+
+  /* .slick-dots li.slick-active button:before {
+    color: white;
+  } */
 
   ul li button {
     &:before {

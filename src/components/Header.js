@@ -10,6 +10,8 @@ import {
   setUserLoginDetails,
   setSignOutState,
 } from "../features/user/userSelect";
+import LogoImage from "../Images/logo.svg";
+import HomeIcon from "../Images/home-icon.svg";
 
 const Header = () => {
   const dispatch = useDispatch(useDispatch);
@@ -53,7 +55,7 @@ const Header = () => {
   return (
     <NavItem>
       <Logo>
-        <img src="/Images/logo.svg" alt="logo" />
+        <img src={LogoImage} alt="logo" />
       </Logo>
 
       {!userSelectName ? (
@@ -62,27 +64,27 @@ const Header = () => {
         <>
           <NavMenu>
             <a href="/">
-              <img src="/Images/home-icon.svg" alt="homeIcon" />
+              <img src={HomeIcon} alt="homeIcon" />
               <span>HOME</span>
             </a>
             <a href="/">
-              <img src="/Images/home-icon.svg" alt="homeIcon" />
+              <img src={HomeIcon} alt="homeIcon" />
               <span>SEARCH</span>
             </a>
             <a href="/">
-              <img src="/Images/home-icon.svg" alt="homeIcon" />
+              <img src={HomeIcon} alt="homeIcon" />
               <span>WATCHLIST</span>
             </a>
             <a href="/">
-              <img src="/Images/home-icon.svg" alt="homeIcon" />
+              <img src={HomeIcon} alt="homeIcon" />
               <span>ORIGINALS</span>
             </a>
             <a href="/">
-              <img src="/Images/home-icon.svg" alt="homeIcon" />
+              <img src={HomeIcon} alt="homeIcon" />
               <span>MOVIES</span>
             </a>
             <a href="/">
-              <img src="/Images/home-icon.svg" alt="homeIcon" />
+              <img src={HomeIcon} alt="homeIcon" />
               <span>SERIES</span>
             </a>
           </NavMenu>
